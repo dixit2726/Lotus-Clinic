@@ -8,20 +8,21 @@
   --color-accent: #D4A373;
   --color-background: #FFF8F5;
   --color-gold: #C89B3C;
-  
   --font-serif: "Playfair Display", serif;
   --font-sans: Inter, sans-serif;
+  --color-gray-800: #1f2937;
 }
 
-@layer base {
-  body {
-    background-color: var(--color-background);
-    color: var(--color-gray-800, #1f2937); /* Fallback for gray-800 */
-    font-family: var(--font-sans);
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
-  }
+body {
+  background-color: var(--color-background);
+  color: var(--color-gray-800);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
 }
 
 .glass-card {
