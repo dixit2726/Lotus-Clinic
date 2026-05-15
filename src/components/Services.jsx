@@ -1,16 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Smile, User, Star, Shield, Sparkles, Heart } from 'lucide-react';
+import { getAssetPath } from '../utils';
 
 const services = [
-  { title: "Teeth Cleaning", icon: <Sparkles className="text-gold" size={24}/>, image: "/assets/whitening.png" },
-  { title: "Root Canal", icon: <Shield className="text-gold" size={24}/>, image: "/assets/rootcanal.png" },
-  { title: "Aligners", icon: <Smile className="text-gold" size={24}/>, image: "/assets/aligners.png" },
-  { title: "Dental Implants", icon: <Star className="text-gold" size={24}/>, image: "/assets/implants.png" },
-  { title: "Crowns & Bridges", icon: <Shield className="text-gold" size={24}/>, image: "/assets/crowns.png" },
-  { title: "Smile Designing", icon: <Smile className="text-gold" size={24}/>, image: "/assets/smiledesign.png" },
-  { title: "Carbon Facial", icon: <User className="text-gold" size={24}/>, image: "/assets/carbonfacial.png" },
-  { title: "HydraFacial", icon: <Heart className="text-gold" size={24}/>, image: "/assets/hydrafacial.png" },
+  { title: "Teeth Cleaning", icon: <Sparkles className="text-gold" size={24}/>, image: getAssetPath('/assets/whitening.png') },
+  { title: "Root Canal", icon: <Shield className="text-gold" size={24}/>, image: getAssetPath('/assets/rootcanal.png') },
+  { title: "Aligners", icon: <Smile className="text-gold" size={24}/>, image: getAssetPath('/assets/aligners.png') },
+  { title: "Dental Implants", icon: <Star className="text-gold" size={24}/>, image: getAssetPath('/assets/implants.png') },
+  { title: "Crowns & Bridges", icon: <Shield className="text-gold" size={24}/>, image: getAssetPath('/assets/crowns.png') },
+  { title: "Smile Designing", icon: <Smile className="text-gold" size={24}/>, image: getAssetPath('/assets/smiledesign.png') },
+  { title: "Carbon Facial", icon: <User className="text-gold" size={24}/>, image: getAssetPath('/assets/carbonfacial.png') },
+  { title: "HydraFacial", icon: <Heart className="text-gold" size={24}/>, image: getAssetPath('/assets/hydrafacial.png') },
 ];
 
 export default function Services() {

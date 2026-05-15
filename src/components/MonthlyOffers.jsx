@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { getAssetPath } from '../utils';
 
 const offers = [
   { 
@@ -7,21 +8,21 @@ const offers = [
     price: "₹1800", 
     oldPrice: "₹3000", 
     desc: "Deep cleansing and glowing skin",
-    image: "/assets/hydrafacial.png"
+    image: getAssetPath('/assets/hydrafacial.png')
   },
   { 
     title: "Teeth Cleaning", 
     price: "₹1200", 
     oldPrice: "₹2500", 
     desc: "Complete scaling and polishing",
-    image: "/assets/whitening.png"
+    image: getAssetPath('/assets/whitening.png')
   },
   { 
     title: "All Treatments", 
     price: "15% OFF", 
     oldPrice: "", 
     desc: "Special discount on any dental treatment",
-    image: "/assets/hero.png" // Using hero image as fallback for general treatments
+    image: getAssetPath('/assets/hero.png')
   },
 ];
 

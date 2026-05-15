@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { getAssetPath } from '../utils';
 
 export default function Hero() {
   return (
@@ -9,7 +10,7 @@ export default function Hero() {
           initial={{ scale: 1 }}
           animate={{ scale: 1.1 }}
           transition={{ duration: 20, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
-          src="/assets/hero.png" 
+          src={getAssetPath('/assets/hero.png')} 
           alt="Luxury Aesthetic Clinic"
           className="w-full h-full object-cover"
         />

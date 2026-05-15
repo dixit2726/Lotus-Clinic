@@ -2,6 +2,7 @@ import React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '../utils';
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-6 group">
-              <img src="/assets/logo.jpg" alt="Lotus Dental Logo" className="h-10 w-auto rounded-lg shadow-lg border border-white/10 group-hover:scale-105 transition-transform" />
+              <img src={getAssetPath('/assets/logo.jpg')} alt="Lotus Dental Logo" className="h-10 w-auto rounded-lg shadow-lg border border-white/10 group-hover:scale-105 transition-transform" />
               <div className="text-2xl font-serif font-bold text-white">
                 Lotus <span className="text-gold">Clinic</span>
               </div>

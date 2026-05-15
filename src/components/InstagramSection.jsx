@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaInstagram } from 'react-icons/fa';
+import { getAssetPath } from '../utils';
 
 export default function InstagramSection() {
   return (
@@ -19,7 +20,7 @@ export default function InstagramSection() {
               className="relative aspect-square rounded-2xl overflow-hidden group cursor-pointer"
             >
               <img 
-                src={`/assets/insta${i}.png`} 
+                src={getAssetPath(`/assets/insta${i}.png`)} 
                 alt={`Clinic Instagram Post ${i}`} 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />

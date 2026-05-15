@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '../utils';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,7 +17,7 @@ export default function Navbar() {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background/90 backdrop-blur-md shadow-md py-4' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 group">
-          <img src="/assets/logo.jpg" alt="Lotus Dental Logo" className="h-10 w-auto rounded-lg shadow-sm group-hover:scale-105 transition-transform" />
+          <img src={getAssetPath('/assets/logo.jpg')} alt="Lotus Dental Logo" className="h-10 w-auto rounded-lg shadow-sm group-hover:scale-105 transition-transform" />
           <div className="text-2xl font-serif font-bold text-primary">
             Lotus <span className="text-gold">Clinic</span>
           </div>
